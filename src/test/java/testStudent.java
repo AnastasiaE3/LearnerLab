@@ -1,5 +1,6 @@
 
 
+import io.zipcoder.interfaces.Person;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -15,6 +16,8 @@ public class testStudent {
 
     @Test
     public void testInheritance() {
+        student student = new student(1, "Nastya");
+        assertTrue(student instanceof Person);
 
     }
 
