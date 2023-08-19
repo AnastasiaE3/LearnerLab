@@ -1,3 +1,5 @@
-public class Instructor {
+import io.zipcoder.interfaces.Person;
+
+public class Instructor extends Person implements Teacher {
 
 }

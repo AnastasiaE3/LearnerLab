@@ -10,14 +10,26 @@ import static org.junit.Assert.assertTrue;
 public class testStudent {
     @Test
     public void testImplementation() {
-        student student = new student(1, "Nastya");
-        assertTrue(student instanceof learner);
+//        student student = new student(1, "Nastya");
+//        assertTrue(student instanceof learner);
+
+        //given
+        learner learner = new student(1, "Nastya");
+        //when
+        boolean result = learner instanceof learner;
+        //then
+        assertTrue(result);
     }
 
     @Test
     public void testInheritance() {
-        student student = new student(1, "Nastya");
-        assertTrue(student instanceof Person);
+//        student student = new student(1, "Nastya");
+//        assertTrue(student instanceof Person);
+
+
+        Person person = new student(1, "Nastya");
+        boolean result = person instanceof Person;
+        assertTrue(result);
 
     }
 
@@ -30,5 +42,16 @@ public class testStudent {
         // between the expected and actual values is within 0.0001.
         student.learn(5.0);
         assertEquals(5.0, student.getTotalStudyTime(), 0.0001);
+//        //given
+//        student student = new student();
+//        boolean prelStudyTime = student.getTotalStudyTime();
+//        boolean numberOfHoursStudy = student.getTotalStudyTime();
+//        boolean postlStudyTime = student.getTotalStudyTime();
+//
+//        //when
+//        student.learn(numberOfHoursStudy);
+//        //then
+//        assertEquals(numberOfHoursStudy, student.getTotalStudyTime(), 0.0001);
+
     }
 }
