@@ -14,14 +14,14 @@ public class TestPerson {
 //        assertEquals("Nastya", person.getName());
 //    }
 //
-//    @Test
-//    public void testSetName() {
-//        Person person = new Person(1,"Nastya");
-//        //set a new name
-//        person.setName("Pidor");
-//        //check if updated correctly
-//        assertEquals("Pidor", person.getName());
-//    }
+    @Test
+    public void testSetName() {
+        Person person = new Person(1,"Nastya");
+        //set a new name
+        person.setName("Pidor");
+        //check if updated correctly
+        assertEquals("Pidor", person.getName());
+    }
     @Test
     public void testConstructor() {
         long expectedId = 1000;
