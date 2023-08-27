@@ -10,15 +10,15 @@ import static org.junit.Assert.assertTrue;
 public class testStudent {
     @Test
     public void testImplementation() {
-//        student student = new student(1, "Nastya");
-//        assertTrue(student instanceof learner);
+        student student = new student(1, "Nastya");
+        assertTrue(student instanceof learner);
 
-        //given
-        learner learner = new student(1, "Nastya");
-        //when
-        boolean result = learner instanceof learner;
-        //then
-        assertTrue(result);
+//        //given
+//        learner learner = new student(1, "Nastya");
+//        //when
+//        boolean result = learner instanceof learner;
+//        //then
+//        assertTrue(result);
     }
 
     @Test
